@@ -1,7 +1,7 @@
-## Keep up with my circle
+## KEEP UP WITH YOUR CIRCLE
 
 
 // 
 
 
-## Connect to the Square
+## CONNECT TO THE SQUARE
