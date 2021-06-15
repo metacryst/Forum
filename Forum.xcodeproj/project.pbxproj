@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010C751826683019007D2F4A /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C751726683019007D2F4A /* WebApi.swift */; };
+		010C751926683019007D2F4A /* WebApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C751726683019007D2F4A /* WebApi.swift */; };
 		012019C82614062A00755BBB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012019C72614062A00755BBB /* Tests_iOS.swift */; };
 		012019D32614062A00755BBB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012019D22614062A00755BBB /* Tests_macOS.swift */; };
 		012019D52614062A00755BBB /* ForumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012019AC2614062300755BBB /* ForumApp.swift */; };
@@ -15,6 +17,20 @@
 		012019D82614062A00755BBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012019AD2614062300755BBB /* ContentView.swift */; };
 		012019D92614062A00755BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012019AE2614062A00755BBB /* Assets.xcassets */; };
 		012019DA2614062A00755BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012019AE2614062A00755BBB /* Assets.xcassets */; };
+		015AE8F42668331C00C9C3A9 /* UserAndPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE8F32668331C00C9C3A9 /* UserAndPassword.swift */; };
+		015AE8F52668331C00C9C3A9 /* UserAndPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE8F32668331C00C9C3A9 /* UserAndPassword.swift */; };
+		015AE9032668347700C9C3A9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE8FF2668347600C9C3A9 /* UserData.swift */; };
+		015AE9042668347700C9C3A9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE8FF2668347600C9C3A9 /* UserData.swift */; };
+		015AE9052668347700C9C3A9 /* UserDataKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE9002668347600C9C3A9 /* UserDataKeychain.swift */; };
+		015AE9062668347700C9C3A9 /* UserDataKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE9002668347600C9C3A9 /* UserDataKeychain.swift */; };
+		015AE9072668347700C9C3A9 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE9012668347600C9C3A9 /* Keychain.swift */; };
+		015AE9082668347700C9C3A9 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE9012668347600C9C3A9 /* Keychain.swift */; };
+		015AE9092668347700C9C3A9 /* SharedWebCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE9022668347600C9C3A9 /* SharedWebCredential.swift */; };
+		015AE90A2668347700C9C3A9 /* SharedWebCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE9022668347600C9C3A9 /* SharedWebCredential.swift */; };
+		015AE910266835FC00C9C3A9 /* SignInWithAppleDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE90F266835FC00C9C3A9 /* SignInWithAppleDelegates.swift */; };
+		015AE911266835FC00C9C3A9 /* SignInWithAppleDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015AE90F266835FC00C9C3A9 /* SignInWithAppleDelegates.swift */; };
+		01760B22266C509D001D7D98 /* EnvironmentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01760B21266C509D001D7D98 /* EnvironmentWindowKey.swift */; };
+		01760B23266C509D001D7D98 /* EnvironmentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01760B21266C509D001D7D98 /* EnvironmentWindowKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010C751726683019007D2F4A /* WebApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApi.swift; sourceTree = "<group>"; };
 		012019AC2614062300755BBB /* ForumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumApp.swift; sourceTree = "<group>"; };
 		012019AD2614062300755BBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		012019AE2614062A00755BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +67,13 @@
 		012019D22614062A00755BBB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		012019D42614062A00755BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		012019ED2614167000755BBB /* Forum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Forum.entitlements; sourceTree = "<group>"; };
+		015AE8F32668331C00C9C3A9 /* UserAndPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAndPassword.swift; sourceTree = "<group>"; };
+		015AE8FF2668347600C9C3A9 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		015AE9002668347600C9C3A9 /* UserDataKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataKeychain.swift; sourceTree = "<group>"; };
+		015AE9012668347600C9C3A9 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		015AE9022668347600C9C3A9 /* SharedWebCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedWebCredential.swift; sourceTree = "<group>"; };
+		015AE90F266835FC00C9C3A9 /* SignInWithAppleDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegates.swift; sourceTree = "<group>"; };
+		01760B21266C509D001D7D98 /* EnvironmentWindowKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentWindowKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +124,14 @@
 		012019AB2614062300755BBB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				015AE90F266835FC00C9C3A9 /* SignInWithAppleDelegates.swift */,
 				012019AC2614062300755BBB /* ForumApp.swift */,
 				012019AD2614062300755BBB /* ContentView.swift */,
 				012019AE2614062A00755BBB /* Assets.xcassets */,
+				010C751726683019007D2F4A /* WebApi.swift */,
+				015AE8F32668331C00C9C3A9 /* UserAndPassword.swift */,
+				01760B21266C509D001D7D98 /* EnvironmentWindowKey.swift */,
+				015AE8FE2668347600C9C3A9 /* CredentialStorage */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -151,6 +180,17 @@
 				012019D42614062A00755BBB /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		015AE8FE2668347600C9C3A9 /* CredentialStorage */ = {
+			isa = PBXGroup;
+			children = (
+				015AE8FF2668347600C9C3A9 /* UserData.swift */,
+				015AE9002668347600C9C3A9 /* UserDataKeychain.swift */,
+				015AE9012668347600C9C3A9 /* Keychain.swift */,
+				015AE9022668347600C9C3A9 /* SharedWebCredential.swift */,
+			);
+			path = CredentialStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +350,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015AE9032668347700C9C3A9 /* UserData.swift in Sources */,
+				01760B22266C509D001D7D98 /* EnvironmentWindowKey.swift in Sources */,
 				012019D72614062A00755BBB /* ContentView.swift in Sources */,
 				012019D52614062A00755BBB /* ForumApp.swift in Sources */,
+				015AE910266835FC00C9C3A9 /* SignInWithAppleDelegates.swift in Sources */,
+				015AE9052668347700C9C3A9 /* UserDataKeychain.swift in Sources */,
+				015AE9072668347700C9C3A9 /* Keychain.swift in Sources */,
+				010C751826683019007D2F4A /* WebApi.swift in Sources */,
+				015AE8F42668331C00C9C3A9 /* UserAndPassword.swift in Sources */,
+				015AE9092668347700C9C3A9 /* SharedWebCredential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015AE9042668347700C9C3A9 /* UserData.swift in Sources */,
+				01760B23266C509D001D7D98 /* EnvironmentWindowKey.swift in Sources */,
 				012019D82614062A00755BBB /* ContentView.swift in Sources */,
 				012019D62614062A00755BBB /* ForumApp.swift in Sources */,
+				015AE911266835FC00C9C3A9 /* SignInWithAppleDelegates.swift in Sources */,
+				015AE9062668347700C9C3A9 /* UserDataKeychain.swift in Sources */,
+				015AE9082668347700C9C3A9 /* Keychain.swift in Sources */,
+				010C751926683019007D2F4A /* WebApi.swift in Sources */,
+				015AE8F52668331C00C9C3A9 /* UserAndPassword.swift in Sources */,
+				015AE90A2668347700C9C3A9 /* SharedWebCredential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

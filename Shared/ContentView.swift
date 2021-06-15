@@ -4,7 +4,11 @@
 //
 //  Created by Sam Russell on 3/30/21.
 //
+//
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAKE IT WORK FOR 100 DUDES
 
+
+import UIKit
 import SwiftUI
 import AuthenticationServices
 
@@ -12,8 +16,8 @@ import AuthenticationServices
 
 struct ContentView: View {
     
-
-    
+    @Environment(\.window) var window: UIWindow?
+    @State var appleSignInDelegates: SignInWithAppleDelegates! = nil
     
     
     var body: some View {
@@ -31,15 +35,18 @@ struct ContentView: View {
             
         ScrollView(.vertical) {
             Button(action: {
-                print("Round Action")
+                showAppleLogin()
                 }) {
 
-                Image("appleLogo")
+                Image("appleLogo").renderingMode(.original)
                     .resizable()
                     .frame(width: 130, height: 130)
-                    .padding(-18)
-                    .padding(.top, 7)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .padding(-20)
+                    .padding(.top, 0)
+                    .offset(x: 0, y:4)
+//                    .clipShape(Circle())
+                    .cornerRadius(13)
+                
                     
                     
             }
@@ -47,21 +54,57 @@ struct ContentView: View {
             .frame(maxWidth: .infinity)
             
 
-
-
         }
             
     }
+        
     }
+    
     
     
     
     private func showAppleLogin() {
+        print("Apple Log In")
+        
         let request = ASAuthorizationAppleIDProvider().createRequest()
+        print(request)
         
         request.requestedScopes = [.fullName, .email]
         
-        let controller = ASAuthorizationController(authorizationRequests: [request])
+        performSignIn(using: [request])
+        
+    }
+    
+    /// Prompts the user if an existing iCloud Keychain credential or Apple ID credential is found.
+    private func performExistingAccountSetupFlows() {
+      #if !targetEnvironment(simulator)
+      // Note that this won't do anything in the simulator.  You need to
+      // be on a real device or you'll just get a failure from the call.
+      let requests = [
+        ASAuthorizationAppleIDProvider().createRequest(),
+        ASAuthorizationPasswordProvider().createRequest()
+      ]
+
+      performSignIn(using: requests)
+      #endif
+    }
+
+    private func performSignIn(using requests: [ASAuthorizationRequest]) {
+      appleSignInDelegates = SignInWithAppleDelegates(window: window) { success in
+        if success {
+            // update UI
+            print("---Success: \(success)")
+        
+        } else {
+            // show the user an error
+        }
+      }
+
+      let controller = ASAuthorizationController(authorizationRequests: requests)
+      controller.delegate = appleSignInDelegates
+      controller.presentationContextProvider = appleSignInDelegates
+
+      controller.performRequests()
     }
     
 }
